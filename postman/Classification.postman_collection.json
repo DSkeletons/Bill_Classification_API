@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "708ffb71-efc0-4a4a-a4d5-9da9c04a4ebe",
+		"name": "Classification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26662190"
+	},
+	"item": [
+		{
+			"name": "Predict Image",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
