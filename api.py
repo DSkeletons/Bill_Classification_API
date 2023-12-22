@@ -21,6 +21,10 @@ def predict_image():
     try:
 
         request_img = request.files['image']
+
+        if(request_img == NULL):
+            return jsonify({'error': "You didn't provide an image."})
+
         temp = 'prediction_image.jpg'
         request_img.save(temp)
         img = image_preprocessing(temp)
