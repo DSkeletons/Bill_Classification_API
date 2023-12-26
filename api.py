@@ -16,6 +16,11 @@ def image_preprocessing(img_path):
     return img
 
 
+@app.route('/', methods=['POST'])
+def home():
+    html = "<html><head><title>Our Company</title></head><body><h1>Welcome to Bill Classification API</h1><h2>This Is Home:</h2></p></body></html>"
+    return html
+
 @app.route('/classification/predict', methods=['POST'])
 def predict_image():
     try:
@@ -50,4 +55,4 @@ def predict_image():
 
 
 if __name__ == '__main__':
-    app.run(host='localhost', port=5000)
+    app.run()
