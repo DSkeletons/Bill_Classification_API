@@ -16,7 +16,7 @@ def image_preprocessing(img_path):
     return img
 
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET', 'POST'])
 def home():
     return flask.render_template('./front/index.html')
 
