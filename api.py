@@ -18,7 +18,7 @@ def image_preprocessing(img_path):
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('./front/index.html')
+    return render_template('index.html')
 
 @app.route('/classification/predict', methods=['POST'])
 def predict_image():
