@@ -1,5 +1,4 @@
-import flask
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import tensorflow as tf
 import cv2
 import numpy as np
@@ -19,7 +18,7 @@ def image_preprocessing(img_path):
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    return flask.render_template('./front/index.html')
+    return render_template('./front/index.html')
 
 @app.route('/classification/predict', methods=['POST'])
 def predict_image():
