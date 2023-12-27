@@ -26,7 +26,7 @@ def predict_image():
 
         request_img = request.files['image']
 
-        if(request_img == None):
+        if request_img is None:
             return jsonify({'error': "You didn't provide an image."})
 
         temp = 'prediction_image.jpg'
